@@ -47,3 +47,134 @@ main {
   box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
     -30px 0px 40px rgba(0, 0, 0, 0.1);
 }
+
+#landing {
+  background: #ffffff;
+}
+
+#landing-text {
+  display: flex;
+  /* The flex property is a shorthand property for:
+  flex-grow
+  flex-shrink
+  flex-basis */
+  /* The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container. 
+
+  The flex-shrink property specifies how the item will shrink relative to the rest of the flexible items inside the same container.
+  
+  The flex-basis property specifies the initial length of a flexible item.*/
+  /* 40% from viewport width  */
+  flex: 0 1 40vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+#landing-text h2 {
+  color: #888888;
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  border: 1px solid #ccc;
+  /* inline-block	Displays an element as  an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values */
+  display: inline-block;
+  margin-top: 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #333333;
+  /* The transition property is a shorthand property for:
+  transition-property
+  transition-duration
+  transition-timing-function
+  transition-delay */
+  /* The transition-property property specifies the name of the CSS property the transition effect is for (the transition effect will start when the specified CSS property changes).
+  NOTE: A transition effect could typically occur when a user hover over an element. 
+  NOTE: Always specify the transition-duration property, otherwise the duration is 0, and the transition will have no effect.
+  
+  
+  The transition-duration property specifies how many seconds (s) or milliseconds (ms) a transition effect takes to complete.
+  
+  The transition-timing-function property specifies the speed curve of the transition effect.
+  This property allows a transition effect to change speed over its duration.
+  ease	Default value. Specifies a transition effect with a slow start, then fast, then end slowly (equivalent to cubic-bezier(0.25,0.1,0.25,1))
+  
+  The transition-delay property specifies when the transition effect will start.
+  The transition-delay value is defined in seconds (s) or milliseconds (ms).
+   */
+
+  transition: background 500ms ease;
+}
+
+#landing-image {
+  /* we can't see it without width and height properties */
+  background: url('https://source.unsplash.com/De8wMYoSSBc');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  flex: 0 1 60vw;
+  margin: 0;
+}
+
+.btn:hover {
+  background: #f4f4f4;
+}
+
+#header {
+  padding: 1.5rem;
+  text-align: center;
+  background: #333333;
+  color: #ffffff;
+}
+
+#header h2 {
+  border-left: 1px dotted #fff;
+  border-right: 1px dotted #fff;
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.caption {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: #333333;
+}
+
+footer h3 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+/* Screen 500px and Up */
+@media(min-width: 500px) {
+  #landing {
+    display: flex;
+    height: 100%;
+  }
+
+  #langing-text {
+    height: 100vh;
+  }
+
+  #landing-image {
+    height: 100vh;
+  }
+}
+
+/* Screen 700px and Up */
+@media(min-width: 700px) {
+  .btn {
+    padding: 1rem 3rem;
+  }
+}
