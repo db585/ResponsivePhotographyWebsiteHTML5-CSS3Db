@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  background: #eee;
+  height: auto;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  /* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; 
+
+  h-offset	Required. The horizontal offset of the shadow. A positive value puts the shadow on the right side of the box, a negative value puts the shadow on the left side of the box
+
+  v-offset	Required. The vertical offset of the shadow. A positive value puts the shadow below the box, a negative value puts the shadow above the box
+  
+  blur	Optional. The blur radius. The higher the number, the more blurred the shadow will be
+  
+  spread	Optional. The spread radius. A positive value increases the size of the shadow, a negative value decreases the size of the shadow
+  We don't have it here
+  
+  color	Optional. The color of the shadow. The default value is the text color.
+  */
+  /* first part is for right and bottom
+    second part is for top and left */
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+    -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
